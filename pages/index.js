@@ -1,11 +1,19 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import Link from 'next/link';
 
-export default function Home() {
-  return (
-    <div className={styles.container}>
-      
-    </div>
-  )
+function HomePage(){
+    return(
+        <div>
+            <h1>The Home Page</h1>
+            <ul>
+                <li>
+                    <a href="/portfolio">Portfolio</a>
+                </li>
+                <li>
+                    <a href="/clients">Clients</a>
+                </li>
+            </ul>
+        </div>
+    );
 }
+
+export default HomePage;
